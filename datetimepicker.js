@@ -8,7 +8,7 @@ datetimepicker.directive("datetimepicker", function($filter) {
 			date: "=",
 			options: "="
 		},
-		template: "<input id=\"picker\" ng-model=\"str\" ng-readonly=\"true\" style=\"cursor: pointer;\"></input>",
+		template: "<input readonly id=\"picker\" ng-model=\"str\" type=\"text\" style=\"background-color: #ffffff; cursor: pointer;\" class=\"form-control\"></input>",
 		link: function(scope, elem, attr) {
 			scope.options.onChangeDateTime = function(dp, i) {
 				scope.date = dp;
