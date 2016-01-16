@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="example">
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.4.5/jquery.datetimepicker.min.css" rel="stylesheet">  
+</head>
+<body> 
+
+<br/>
+
+<div ng-controller="demoController" class="container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<datetimepicker options="options" date="date"></datetimepicker>
+			</div>
+			<div class="col-md-2">
+				<p>{{date | date: "yyyy-MM-dd HH:mm"}}</p>
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-default" ng-click="set()">set</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.4.5/jquery.datetimepicker.min.js"></script>
+<script src="../datetimepicker.js"></script>
+<script src="script.js"></script>
+</html>
