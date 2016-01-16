@@ -3,22 +3,41 @@
 <head>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.4.5/jquery.datetimepicker.min.css" rel="stylesheet">  
+<style>
+.buffer {
+	margin-top: 20px;
+}
+</style>
 </head>
 <body> 
-
-<br/>
 
 <div ng-controller="demoController" class="container">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-12">
+				<h2>datetimepicker</h2>
+			</div>
+		</div>
+		<div class="row buffer">
 			<div class="col-md-2">
 				<datetimepicker options="options" date="date"></datetimepicker>
 			</div>
 			<div class="col-md-2">
-				<p>{{date | date: "yyyy-MM-dd HH:mm"}}</p>
+				<button class="btn btn-default" ng-click="set()">set</button>
 			</div>
 			<div class="col-md-2">
-				<button class="btn btn-default" ng-click="set()">set</button>
+				<p>{{date | date: "yyyy-MM-dd HH:mm"}}</p>
+			</div>
+		</div>
+		<div class="row buffer">
+			<div class="col-md-2">
+				<datetimepicker options="options" date="date2"></datetimepicker>
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-default" ng-click="set2()">set</button>
+			</div>
+			<div class="col-md-2">
+				<p>{{date2 | date: "yyyy-MM-dd HH:mm"}}</p>
 			</div>
 		</div>
 	</div>

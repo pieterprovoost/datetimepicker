@@ -20,4 +20,8 @@ app.controller("demoController", function($scope) {
 		$scope.date = new Date();
 	};
 
+	$scope.set2 = function() {
+		$scope.date2 = new Date();
+	};
+
 });
